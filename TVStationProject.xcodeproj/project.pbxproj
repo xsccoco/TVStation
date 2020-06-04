@@ -10,7 +10,6 @@
 		D6DDB08F78F53AE946179174 /* Pods_TVStationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */; };
 		DC6592452488F9B300D19765 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592442488F9B300D19765 /* AppDelegate.m */; };
 		DC6592482488F9B300D19765 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592472488F9B300D19765 /* SceneDelegate.m */; };
-		DC65924B2488F9B300D19765 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65924A2488F9B300D19765 /* ViewController.m */; };
 		DC65924E2488F9B300D19765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC65924C2488F9B300D19765 /* Main.storyboard */; };
 		DC6592502488F9B400D19765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC65924F2488F9B400D19765 /* Assets.xcassets */; };
 		DC6592532488F9B400D19765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6592512488F9B400D19765 /* LaunchScreen.storyboard */; };
@@ -25,8 +24,6 @@
 		DC6592442488F9B300D19765 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DC6592462488F9B300D19765 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		DC6592472488F9B300D19765 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DC6592492488F9B300D19765 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DC65924A2488F9B300D19765 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DC65924D2488F9B300D19765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC65924F2488F9B400D19765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6592522488F9B400D19765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,7 +50,6 @@
 				F45E9F64285F2ABAC1C04151 /* Pods-TVStationProject.debug.xcconfig */,
 				DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,8 +86,6 @@
 				DC6592442488F9B300D19765 /* AppDelegate.m */,
 				DC6592462488F9B300D19765 /* SceneDelegate.h */,
 				DC6592472488F9B300D19765 /* SceneDelegate.m */,
-				DC6592492488F9B300D19765 /* ViewController.h */,
-				DC65924A2488F9B300D19765 /* ViewController.m */,
 				DC65924C2488F9B300D19765 /* Main.storyboard */,
 				DC65924F2488F9B400D19765 /* Assets.xcassets */,
 				DC6592512488F9B400D19765 /* LaunchScreen.storyboard */,
@@ -197,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC65924B2488F9B300D19765 /* ViewController.m in Sources */,
 				DC6592452488F9B300D19765 /* AppDelegate.m in Sources */,
 				DC6592562488F9B400D19765 /* main.m in Sources */,
 				DC6592482488F9B300D19765 /* SceneDelegate.m in Sources */,
