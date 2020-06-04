@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6DDB08F78F53AE946179174 /* Pods_TVStationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */; };
 		DC6592452488F9B300D19765 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592442488F9B300D19765 /* AppDelegate.m */; };
 		DC6592482488F9B300D19765 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592472488F9B300D19765 /* SceneDelegate.m */; };
 		DC65924B2488F9B300D19765 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65924A2488F9B300D19765 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVStationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.release.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.release.xcconfig"; sourceTree = "<group>"; };
 		DC6592402488F9B300D19765 /* TVStationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVStationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6592432488F9B300D19765 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC6592442488F9B300D19765 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		DC6592522488F9B400D19765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6592542488F9B400D19765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6592552488F9B400D19765 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F45E9F64285F2ABAC1C04151 /* Pods-TVStationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.debug.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DDB08F78F53AE946179174 /* Pods_TVStationProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07E26DE91111880DEBCC4488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F45E9F64285F2ABAC1C04151 /* Pods-TVStationProject.debug.xcconfig */,
+				DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9AC29C52F1050D04E247E041 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC6592372488F9B300D19765 = {
 			isa = PBXGroup;
 			children = (
 				DC6592422488F9B300D19765 /* TVStationProject */,
 				DC6592412488F9B300D19765 /* Products */,
+				07E26DE91111880DEBCC4488 /* Pods */,
+				9AC29C52F1050D04E247E041 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC6592592488F9B400D19765 /* Build configuration list for PBXNativeTarget "TVStationProject" */;
 			buildPhases = (
+				6142C9B3B6063ECF1724108B /* [CP] Check Pods Manifest.lock */,
 				DC65923C2488F9B300D19765 /* Sources */,
 				DC65923D2488F9B300D19765 /* Frameworks */,
 				DC65923E2488F9B300D19765 /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6142C9B3B6063ECF1724108B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVStationProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC65923C2488F9B300D19765 /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		DC65925A2488F9B400D19765 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45E9F64285F2ABAC1C04151 /* Pods-TVStationProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +356,7 @@
 		};
 		DC65925B2488F9B400D19765 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
