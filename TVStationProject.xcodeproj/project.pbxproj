@@ -8,27 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		D6DDB08F78F53AE946179174 /* Pods_TVStationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */; };
-		DC6592452488F9B300D19765 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592442488F9B300D19765 /* AppDelegate.m */; };
-		DC6592482488F9B300D19765 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592472488F9B300D19765 /* SceneDelegate.m */; };
-		DC65924E2488F9B300D19765 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC65924C2488F9B300D19765 /* Main.storyboard */; };
 		DC6592502488F9B400D19765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC65924F2488F9B400D19765 /* Assets.xcassets */; };
 		DC6592532488F9B400D19765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6592512488F9B400D19765 /* LaunchScreen.storyboard */; };
 		DC6592562488F9B400D19765 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592552488F9B400D19765 /* main.m */; };
+		DC65929F2489D5DD00D19765 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592942489D5DD00D19765 /* SceneDelegate.m */; };
+		DC6592A02489D5DD00D19765 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592952489D5DD00D19765 /* AppDelegate.m */; };
+		DC6592A12489D5DD00D19765 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592992489D5DD00D19765 /* BaseViewController.m */; };
+		DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65929B2489D5DD00D19765 /* BaseNavigationController.m */; };
+		DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65929D2489D5DD00D19765 /* BaseTabbarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVStationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.release.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.release.xcconfig"; sourceTree = "<group>"; };
 		DC6592402488F9B300D19765 /* TVStationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVStationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6592432488F9B300D19765 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DC6592442488F9B300D19765 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC6592462488F9B300D19765 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		DC6592472488F9B300D19765 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DC65924D2488F9B300D19765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC65924F2488F9B400D19765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6592522488F9B400D19765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6592542488F9B400D19765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6592552488F9B400D19765 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC6592932489D5DD00D19765 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC6592942489D5DD00D19765 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DC6592952489D5DD00D19765 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC6592962489D5DD00D19765 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DC6592992489D5DD00D19765 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DC65929A2489D5DD00D19765 /* BaseTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabbarController.h; sourceTree = "<group>"; };
+		DC65929B2489D5DD00D19765 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		DC65929C2489D5DD00D19765 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		DC65929D2489D5DD00D19765 /* BaseTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarController.m; sourceTree = "<group>"; };
+		DC65929E2489D5DD00D19765 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F45E9F64285F2ABAC1C04151 /* Pods-TVStationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.debug.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,17 +89,102 @@
 		DC6592422488F9B300D19765 /* TVStationProject */ = {
 			isa = PBXGroup;
 			children = (
-				DC6592432488F9B300D19765 /* AppDelegate.h */,
-				DC6592442488F9B300D19765 /* AppDelegate.m */,
-				DC6592462488F9B300D19765 /* SceneDelegate.h */,
-				DC6592472488F9B300D19765 /* SceneDelegate.m */,
-				DC65924C2488F9B300D19765 /* Main.storyboard */,
+				DC65928B2489D5DD00D19765 /* Classes */,
 				DC65924F2488F9B400D19765 /* Assets.xcassets */,
 				DC6592512488F9B400D19765 /* LaunchScreen.storyboard */,
 				DC6592542488F9B400D19765 /* Info.plist */,
 				DC6592552488F9B400D19765 /* main.m */,
 			);
 			path = TVStationProject;
+			sourceTree = "<group>";
+		};
+		DC65928B2489D5DD00D19765 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC6592922489D5DD00D19765 /* AppDelegate */,
+				DC6592982489D5DD00D19765 /* Base */,
+				DC6592972489D5DD00D19765 /* Categories */,
+				DC65928C2489D5DD00D19765 /* Utils */,
+				DC65928D2489D5DD00D19765 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DC65928C2489D5DD00D19765 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DC65928D2489D5DD00D19765 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC65928E2489D5DD00D19765 /* TSLaunchViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DC65928E2489D5DD00D19765 /* TSLaunchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC65928F2489D5DD00D19765 /* Manager */,
+				DC6592902489D5DD00D19765 /* View */,
+				DC6592912489D5DD00D19765 /* ViewController */,
+			);
+			path = TSLaunchViewController;
+			sourceTree = "<group>";
+		};
+		DC65928F2489D5DD00D19765 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DC6592902489D5DD00D19765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC6592912489D5DD00D19765 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DC6592922489D5DD00D19765 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DC6592932489D5DD00D19765 /* AppDelegate.h */,
+				DC6592942489D5DD00D19765 /* SceneDelegate.m */,
+				DC6592952489D5DD00D19765 /* AppDelegate.m */,
+				DC6592962489D5DD00D19765 /* SceneDelegate.h */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DC6592972489D5DD00D19765 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DC6592982489D5DD00D19765 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DC6592992489D5DD00D19765 /* BaseViewController.m */,
+				DC65929A2489D5DD00D19765 /* BaseTabbarController.h */,
+				DC65929B2489D5DD00D19765 /* BaseNavigationController.m */,
+				DC65929C2489D5DD00D19765 /* BaseNavigationController.h */,
+				DC65929D2489D5DD00D19765 /* BaseTabbarController.m */,
+				DC65929E2489D5DD00D19765 /* BaseViewController.h */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +247,6 @@
 			files = (
 				DC6592532488F9B400D19765 /* LaunchScreen.storyboard in Resources */,
 				DC6592502488F9B400D19765 /* Assets.xcassets in Resources */,
-				DC65924E2488F9B300D19765 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,23 +282,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6592452488F9B300D19765 /* AppDelegate.m in Sources */,
 				DC6592562488F9B400D19765 /* main.m in Sources */,
-				DC6592482488F9B300D19765 /* SceneDelegate.m in Sources */,
+				DC6592A12489D5DD00D19765 /* BaseViewController.m in Sources */,
+				DC65929F2489D5DD00D19765 /* SceneDelegate.m in Sources */,
+				DC6592A02489D5DD00D19765 /* AppDelegate.m in Sources */,
+				DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */,
+				DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DC65924C2488F9B300D19765 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC65924D2488F9B300D19765 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC6592512488F9B400D19765 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -337,6 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C83B662A5;
 				INFOPLIST_FILE = TVStationProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C83B662A5;
 				INFOPLIST_FILE = TVStationProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
