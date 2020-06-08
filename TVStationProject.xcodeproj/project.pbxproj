@@ -8,34 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		D6DDB08F78F53AE946179174 /* Pods_TVStationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */; };
-		DC6592502488F9B400D19765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC65924F2488F9B400D19765 /* Assets.xcassets */; };
+		DC5A5B46248DED3800FD6997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5A5B45248DED3800FD6997 /* Assets.xcassets */; };
 		DC6592532488F9B400D19765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6592512488F9B400D19765 /* LaunchScreen.storyboard */; };
 		DC6592562488F9B400D19765 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592552488F9B400D19765 /* main.m */; };
-		DC65929F2489D5DD00D19765 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592942489D5DD00D19765 /* SceneDelegate.m */; };
 		DC6592A02489D5DD00D19765 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592952489D5DD00D19765 /* AppDelegate.m */; };
 		DC6592A12489D5DD00D19765 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592992489D5DD00D19765 /* BaseViewController.m */; };
 		DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65929B2489D5DD00D19765 /* BaseNavigationController.m */; };
 		DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65929D2489D5DD00D19765 /* BaseTabbarController.m */; };
+		DC6592A62489DA4600D19765 /* TSLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592A52489DA4600D19765 /* TSLaunchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVStationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.release.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.release.xcconfig"; sourceTree = "<group>"; };
+		DC5A5B45248DED3800FD6997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6592402488F9B300D19765 /* TVStationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVStationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC65924F2488F9B400D19765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6592522488F9B400D19765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6592542488F9B400D19765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6592552488F9B400D19765 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC6592932489D5DD00D19765 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DC6592942489D5DD00D19765 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		DC6592952489D5DD00D19765 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC6592962489D5DD00D19765 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		DC6592992489D5DD00D19765 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DC65929A2489D5DD00D19765 /* BaseTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabbarController.h; sourceTree = "<group>"; };
 		DC65929B2489D5DD00D19765 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		DC65929C2489D5DD00D19765 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		DC65929D2489D5DD00D19765 /* BaseTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarController.m; sourceTree = "<group>"; };
 		DC65929E2489D5DD00D19765 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DC6592A42489DA4600D19765 /* TSLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLaunchViewController.h; sourceTree = "<group>"; };
+		DC6592A52489DA4600D19765 /* TSLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLaunchViewController.m; sourceTree = "<group>"; };
 		F45E9F64285F2ABAC1C04151 /* Pods-TVStationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.debug.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +68,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC5A5B44248DED3800FD6997 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A5B45248DED3800FD6997 /* Assets.xcassets */,
+			);
+			name = Resource;
+			path = TVStationProject/Resource;
+			sourceTree = SOURCE_ROOT;
+		};
 		DC6592372488F9B300D19765 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DC65928B2489D5DD00D19765 /* Classes */,
-				DC65924F2488F9B400D19765 /* Assets.xcassets */,
+				DC5A5B44248DED3800FD6997 /* Resource */,
 				DC6592512488F9B400D19765 /* LaunchScreen.storyboard */,
 				DC6592542488F9B400D19765 /* Info.plist */,
 				DC6592552488F9B400D19765 /* main.m */,
@@ -152,6 +161,8 @@
 		DC6592912489D5DD00D19765 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DC6592A42489DA4600D19765 /* TSLaunchViewController.h */,
+				DC6592A52489DA4600D19765 /* TSLaunchViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -160,9 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6592932489D5DD00D19765 /* AppDelegate.h */,
-				DC6592942489D5DD00D19765 /* SceneDelegate.m */,
 				DC6592952489D5DD00D19765 /* AppDelegate.m */,
-				DC6592962489D5DD00D19765 /* SceneDelegate.h */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -177,12 +186,12 @@
 		DC6592982489D5DD00D19765 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				DC6592992489D5DD00D19765 /* BaseViewController.m */,
-				DC65929A2489D5DD00D19765 /* BaseTabbarController.h */,
-				DC65929B2489D5DD00D19765 /* BaseNavigationController.m */,
-				DC65929C2489D5DD00D19765 /* BaseNavigationController.h */,
-				DC65929D2489D5DD00D19765 /* BaseTabbarController.m */,
 				DC65929E2489D5DD00D19765 /* BaseViewController.h */,
+				DC6592992489D5DD00D19765 /* BaseViewController.m */,
+				DC65929C2489D5DD00D19765 /* BaseNavigationController.h */,
+				DC65929B2489D5DD00D19765 /* BaseNavigationController.m */,
+				DC65929A2489D5DD00D19765 /* BaseTabbarController.h */,
+				DC65929D2489D5DD00D19765 /* BaseTabbarController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -245,8 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5A5B46248DED3800FD6997 /* Assets.xcassets in Resources */,
 				DC6592532488F9B400D19765 /* LaunchScreen.storyboard in Resources */,
-				DC6592502488F9B400D19765 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6592562488F9B400D19765 /* main.m in Sources */,
+				DC6592A62489DA4600D19765 /* TSLaunchViewController.m in Sources */,
 				DC6592A12489D5DD00D19765 /* BaseViewController.m in Sources */,
-				DC65929F2489D5DD00D19765 /* SceneDelegate.m in Sources */,
 				DC6592A02489D5DD00D19765 /* AppDelegate.m in Sources */,
 				DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */,
 				DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */,

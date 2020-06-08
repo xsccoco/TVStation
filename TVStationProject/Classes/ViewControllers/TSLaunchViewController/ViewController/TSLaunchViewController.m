@@ -1,23 +1,22 @@
 //
-//  BaseViewController.m
+//  TSLaunchViewController.m
 //  TVStationProject
 //
-//  Created by 徐世船 on 2020/6/4.
+//  Created by 徐世船 on 2020/6/5.
 //  Copyright © 2020 徐世船. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "TSLaunchViewController.h"
 
-@interface BaseViewController ()
+@interface TSLaunchViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation TSLaunchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 /*
