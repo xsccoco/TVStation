@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6DDB08F78F53AE946179174 /* Pods_TVStationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */; };
+		9E45771CDF715126B23452E3 /* libPods-TVStationProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DAA1BFFD7AB213E0769A17 /* libPods-TVStationProject.a */; };
+		DC0EBA68248F630E00CA22F9 /* TSNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA67248F630E00CA22F9 /* TSNetworkUtil.m */; };
 		DC5A5B46248DED3800FD6997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5A5B45248DED3800FD6997 /* Assets.xcassets */; };
 		DC6592532488F9B400D19765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6592512488F9B400D19765 /* LaunchScreen.storyboard */; };
 		DC6592562488F9B400D19765 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592552488F9B400D19765 /* main.m */; };
@@ -16,10 +17,14 @@
 		DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65929B2489D5DD00D19765 /* BaseNavigationController.m */; };
 		DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65929D2489D5DD00D19765 /* BaseTabbarController.m */; };
 		DC6592A62489DA4600D19765 /* TSLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592A52489DA4600D19765 /* TSLaunchViewController.m */; };
+		DC751587248E2CD1004FE068 /* TSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC751586248E2CD1004FE068 /* TSNetworkManager.m */; };
+		DC75158A248E2D32004FE068 /* TSBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC751589248E2D32004FE068 /* TSBaseRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVStationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DAA1BFFD7AB213E0769A17 /* libPods-TVStationProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVStationProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0EBA66248F630E00CA22F9 /* TSNetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNetworkUtil.h; sourceTree = "<group>"; };
+		DC0EBA67248F630E00CA22F9 /* TSNetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNetworkUtil.m; sourceTree = "<group>"; };
 		DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.release.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.release.xcconfig"; sourceTree = "<group>"; };
 		DC5A5B45248DED3800FD6997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6592402488F9B300D19765 /* TVStationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVStationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +41,11 @@
 		DC65929E2489D5DD00D19765 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DC6592A42489DA4600D19765 /* TSLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLaunchViewController.h; sourceTree = "<group>"; };
 		DC6592A52489DA4600D19765 /* TSLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLaunchViewController.m; sourceTree = "<group>"; };
+		DC751585248E2CD1004FE068 /* TSNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNetworkManager.h; sourceTree = "<group>"; };
+		DC751586248E2CD1004FE068 /* TSNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNetworkManager.m; sourceTree = "<group>"; };
+		DC751588248E2D32004FE068 /* TSBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseRequest.h; sourceTree = "<group>"; };
+		DC751589248E2D32004FE068 /* TSBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseRequest.m; sourceTree = "<group>"; };
+		DC75158B248E479E004FE068 /* TSNetworkConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNetworkConstant.h; sourceTree = "<group>"; };
 		F45E9F64285F2ABAC1C04151 /* Pods-TVStationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.debug.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6DDB08F78F53AE946179174 /* Pods_TVStationProject.framework in Frameworks */,
+				9E45771CDF715126B23452E3 /* libPods-TVStationProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +73,7 @@
 		9AC29C52F1050D04E247E041 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28F57C78AD6252864A8741AA /* Pods_TVStationProject.framework */,
+				55DAA1BFFD7AB213E0769A17 /* libPods-TVStationProject.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6592922489D5DD00D19765 /* AppDelegate */,
+				DC751582248E264F004FE068 /* ThirdPart */,
 				DC6592982489D5DD00D19765 /* Base */,
 				DC6592972489D5DD00D19765 /* Categories */,
 				DC65928C2489D5DD00D19765 /* Utils */,
@@ -194,6 +205,36 @@
 				DC65929D2489D5DD00D19765 /* BaseTabbarController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		DC751582248E264F004FE068 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				DC751583248E264F004FE068 /* AFNetworking */,
+				DC751584248E264F004FE068 /* SDWebImage */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		DC751583248E264F004FE068 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DC751585248E2CD1004FE068 /* TSNetworkManager.h */,
+				DC751586248E2CD1004FE068 /* TSNetworkManager.m */,
+				DC751588248E2D32004FE068 /* TSBaseRequest.h */,
+				DC751589248E2D32004FE068 /* TSBaseRequest.m */,
+				DC0EBA66248F630E00CA22F9 /* TSNetworkUtil.h */,
+				DC0EBA67248F630E00CA22F9 /* TSNetworkUtil.m */,
+				DC75158B248E479E004FE068 /* TSNetworkConstant.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		DC751584248E264F004FE068 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +337,10 @@
 				DC6592A12489D5DD00D19765 /* BaseViewController.m in Sources */,
 				DC6592A02489D5DD00D19765 /* AppDelegate.m in Sources */,
 				DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */,
+				DC75158A248E2D32004FE068 /* TSBaseRequest.m in Sources */,
 				DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */,
+				DC0EBA68248F630E00CA22F9 /* TSNetworkUtil.m in Sources */,
+				DC751587248E2CD1004FE068 /* TSNetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
