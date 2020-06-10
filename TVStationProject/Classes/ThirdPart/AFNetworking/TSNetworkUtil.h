@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSDictionary*)commonParams;
 + (NSDictionary*)commonParamsAppVersion;
 
+
 // json转dict
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
 

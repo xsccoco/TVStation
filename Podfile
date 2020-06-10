@@ -5,7 +5,8 @@
 def commonPods
   pod 'AFNetworking', '~> 3.0.4'
   pod 'SDWebImage', '~> 5.0'
-  
+  pod "YYModel"
+  pod 'SSKeychain'
 end
 
 

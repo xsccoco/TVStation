@@ -8,6 +8,7 @@
 
 #import "TSNetworkUtil.h"
 #import "TSNetworkConstant.h"
+#import "DeviceUtil.h"
 
 @implementation TSNetworkUtil
 
@@ -95,7 +96,7 @@
 // 当前设备的uuid
 + (NSString *)getSSKeychainValue
 {
-    return @"";
+    return [DeviceUtil getSSKeychainValue];
 }
 
 @end

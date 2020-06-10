@@ -42,11 +42,23 @@ typedef NS_ENUM(NSInteger, TSRequestMethod) {
     TSRequestMethodDELETE,
 };
 
+// 请求状态
 typedef NS_ENUM(NSInteger, TSRequestStatus) {
     TSRequestStatusRunning = 0,
     TSRequestStatusCanceling = 1,
     TSRequestStatusCompleted = 2,
 };
+
+// 响应状态码
+typedef NS_ENUM(NSInteger, TSResponseStatus) { // 根据后台业务确定
+    TSResponseStatusSuccess = 1000, // 请求成功state状态码
+    TSResponseStatusTokenValid = 10002, //用户中心的接口token失效返回
+    TSResponseStatusUserNotExist = 2009, //我们自己后台token失效返回
+    TSResponseStatusPayTokenValid = 42001, //支付后台token失效返回
+    TSResponseStatusUnknownTokenValid = 80045,
+    TSResponseStatusVersionIncompatible = 4008, //版本不兼容
+};
+
 
 // 接口最大并发数
 #define MAX_CONCURRENT_REQUEST_COUNT   4
@@ -71,5 +83,12 @@ typedef NS_ENUM(NSInteger, TSRequestStatus) {
 //终端类型
 //#define KEY_TERMINAL_TYPE           (IsIPad?@"iospad":@"ios")
 #define KEY_TERMINAL_TYPE           @"ios"
+
+
+
+#define BASE_SERVICE_URL     @"https://vapp.96189.com"
+
+// http接口地址
+#define YANGFAN_SERVICE_URL     [NSString stringWithFormat:@"%@/setsail/external/externalService",BASE_SERVICE_URL]
 
 #endif /* TSNetworkConstant_h */

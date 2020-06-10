@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 取消单个请求
 - (void)cancelRequest:(TSBaseRequest *)request;
 // 取消全部请求
-- (void)cancelAllRequest:(TSBaseRequest *)request;
+- (void)cancelAllRequest;
 
 
 @end

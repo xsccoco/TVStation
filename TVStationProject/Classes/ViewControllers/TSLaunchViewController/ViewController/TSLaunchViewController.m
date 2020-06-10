@@ -7,26 +7,32 @@
 //
 
 #import "TSLaunchViewController.h"
+#import "TSLaunchManager.h"
 
 @interface TSLaunchViewController ()
-
+@property (nonatomic, strong) TSLaunchManager *launchManager;
 @end
 
 @implementation TSLaunchViewController
-
+#pragma mark - lifeCycle
+- (void)dealloc
+{
+    NSLog(@"TSLaunchViewController dealloc");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.launchManager getParameterList];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - lazyload
+- (TSLaunchManager *)launchManager
+{
+    if (!_launchManager) {
+        _launchManager = [[TSLaunchManager alloc] init];
+    }
+    return _launchManager;
 }
-*/
+
 
 @end

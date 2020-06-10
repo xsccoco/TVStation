@@ -31,7 +31,8 @@ typedef void (^AFConstructingBlock)(id<AFMultipartFormData> formData);
 @property (nonatomic, strong) NSURLSessionDataTask *task;
 // 请求状态
 @property (nonatomic, assign) TSRequestStatus status;
-
+// 请求token失效
+@property (nonatomic, copy) void(^requestTokenInvalidateBlock)(TSBaseRequest *);
 // 开始请求
 - (void)start;
 

@@ -219,7 +219,7 @@ NSString * const TSRequestOutOfNetwork = @"com.xsc.network.request.outofNetwork"
 }
 
 // 取消全部请求
-- (void)cancelAllRequest:(TSBaseRequest *)request
+- (void)cancelAllRequest
 {
     for (NSString *key in self.requests.allKeys) {
         TSBaseRequest *request = self.requests[key];
