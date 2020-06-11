@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TSNetworkConstant.h"
 #import <AFNetworking.h>
+#import "TSBaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,6 +37,9 @@ typedef void (^AFConstructingBlock)(id<AFMultipartFormData> formData);
 // 开始请求
 - (void)start;
 
+// 开始请求带缓存的
+- (void)startWithCache;
+
 // 开始请求设置成功失败回调
 - (void)startWithRequestSuccessBlock:(void(^)(TSBaseRequest *request))success
                         failureBlock:(void(^)(TSBaseRequest *request))failure;
@@ -61,14 +65,39 @@ typedef void (^AFConstructingBlock)(id<AFMultipartFormData> formData);
 - (void)requestCompleteFailure;
 
 
+// 返回当前缓存数据
+- (id)cacheJson;
+
+// 当前数据是否从缓存获得
+- (BOOL)isDataFromCache;
+
+// 更新缓存
+- (void)updateJsonResponse:(id)jsonResponse;
 
 // 子类覆盖方法
+
+// 是否使用缓存
+- (BOOL)useCache;
+
+// 缓存有效时间，单位秒，默认300s
+- (NSInteger)cacheTimeInSeconds;
+
+// 向缓存文件名添加关键敏感词
+- (id)cacheSensitiveData;
+
+// 是否可以更新缓存，default YES
+- (BOOL)canUpdateCache:(id)jsonResponse;
+
+// 用于在cache结果，计算cache文件名时，忽略掉一些指定的参数
+- (id)cacheFileNameFilterForRequestParameter:(id)parameter;
+
 // 是否使用Cookies, default NO
 - (BOOL)useCookies;
 
 // url是否已经编码了
 - (BOOL)isAlreadEncode;
 
+#pragma mark - 子类覆盖方法
 // 请求的BaseUrl
 - (NSString *)requestBaseUrl;
 

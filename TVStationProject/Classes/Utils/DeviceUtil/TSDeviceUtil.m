@@ -1,12 +1,12 @@
 //
-//  DeviceUtil.m
+//  TSDeviceUtil.m
 //  TVStationProject
 //
-//  Created by 徐世船 on 2020/6/10.
+//  Created by 徐世船 on 2020/6/11.
 //  Copyright © 2020 徐世船. All rights reserved.
 //
 
-#import "DeviceUtil.h"
+#import "TSDeviceUtil.h"
 #import <SSKeychain.h>
 #import "NSString+TSExtension.h"
 
@@ -14,7 +14,7 @@ NSString* keychainUUID = nil;
 NSString * const KeyChainPwd = @"055273038.com.yunzhi.Yangfan";
 NSString * const KeyChainAccount = @"user";
 
-@implementation DeviceUtil
+@implementation TSDeviceUtil
 
 // 使用第三方库SSKeychain 获取保存在keychain里面的 uuid 如果第一次则生成一个并保存到keychain中
 + (NSString *)getSSKeychainValue
@@ -29,7 +29,7 @@ NSString * const KeyChainAccount = @"user";
         keychainUUID = [self generateUuid];
         OSStatus status = [SSKeychain setPassword:[NSString stringWithFormat:@"%@", keychainUUID] forService:KeyChainPwd account:KeyChainAccount];
         if (status != noErr) {
-            NSLog(@"SSKeychain setPassword status:%d", status);
+            NSLog(@"SSKeychain setPassword status:%d", (int)status);
         }
     }
     return keychainUUID;

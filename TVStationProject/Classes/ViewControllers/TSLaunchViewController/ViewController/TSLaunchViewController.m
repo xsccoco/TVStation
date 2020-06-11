@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.launchManager getParameterList];
+    [self.launchManager getStartAdList];
+    
 }
 
 

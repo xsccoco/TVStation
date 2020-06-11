@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "TSNetworkConstant.h"
-#import "NSObject+YYModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TSBaseModel : NSObject
 
+// 返回状态码，详见接口返回状态码表
 @property (nonatomic, assign) TSResponseStatus state;
+// 结果描述
 @property (nonatomic, strong) NSString *message;
 @property (nonatomic, strong) NSString *currTime;
 

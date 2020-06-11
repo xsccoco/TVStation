@@ -8,7 +8,7 @@
 
 #import "TSNetworkUtil.h"
 #import "TSNetworkConstant.h"
-#import "DeviceUtil.h"
+#import "TSDeviceUtil.h"
 
 @implementation TSNetworkUtil
 
@@ -84,8 +84,16 @@
     return jsonString;
 }
 
-
-#pragma mark - privateMethods
+// 给指定文件目录添加不备份属性
++ (void)addDoNotBackupAttribute:(NSString *)path
+{
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSError *error = nil;
+    [url setResourceValue:@YES forKey:NSURLIsExcludedFromBackupKey error:&error];
+    if (error) {
+        NSLog(@"error in set back up attribute: %@", error.localizedDescription);
+    }
+}
 
 // 当前应用版本号
 + (NSString *)appVersionString
@@ -93,10 +101,12 @@
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
+#pragma mark - privateMethods
+
 // 当前设备的uuid
 + (NSString *)getSSKeychainValue
 {
-    return [DeviceUtil getSSKeychainValue];
+    return [TSDeviceUtil getSSKeychainValue];
 }
 
 @end

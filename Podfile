@@ -7,6 +7,8 @@ def commonPods
   pod 'SDWebImage', '~> 5.0'
   pod "YYModel"
   pod 'SSKeychain'
+  # 控制台打印中文
+  pod 'HYBUnicodeReadable', '~> 1.1'
 end
 
 

@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9E45771CDF715126B23452E3 /* libPods-TVStationProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DAA1BFFD7AB213E0769A17 /* libPods-TVStationProject.a */; };
+		DC0EB10F2491C5DD00F5C91D /* TSGetParameterListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB10E2491C5DD00F5C91D /* TSGetParameterListModel.m */; };
+		DC0EB11F24921F1E00F5C91D /* TSEncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB11E24921F1E00F5C91D /* TSEncryptUtil.m */; };
+		DC0EB12224921F3C00F5C91D /* TSFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB12124921F3C00F5C91D /* TSFileUtil.m */; };
+		DC0EB12524921FEA00F5C91D /* TSDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB12424921FEA00F5C91D /* TSDeviceUtil.m */; };
+		DC0EB1282492293300F5C91D /* TSGetStartAdsListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB1272492293300F5C91D /* TSGetStartAdsListRequest.m */; };
+		DC0EB12B24922AA500F5C91D /* TSGetStartAdsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB12A24922AA500F5C91D /* TSGetStartAdsListModel.m */; };
 		DC0EBA68248F630E00CA22F9 /* TSNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA67248F630E00CA22F9 /* TSNetworkUtil.m */; };
 		DC0EBA6B2490830400CA22F9 /* TSBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA6A2490830400CA22F9 /* TSBaseModel.m */; };
-		DC0EBA6F24908D5A00CA22F9 /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA6E24908D5A00CA22F9 /* DeviceUtil.m */; };
 		DC0EBA742490BE8D00CA22F9 /* NSString+TSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA732490BE8D00CA22F9 /* NSString+TSExtension.m */; };
 		DC0EBA782490C80D00CA22F9 /* TSGetParameterListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA772490C80D00CA22F9 /* TSGetParameterListRequest.m */; };
 		DC0EBA7B2490D04200CA22F9 /* TSLaunchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA7A2490D04200CA22F9 /* TSLaunchManager.m */; };
@@ -28,12 +33,26 @@
 
 /* Begin PBXFileReference section */
 		55DAA1BFFD7AB213E0769A17 /* libPods-TVStationProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVStationProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0EB10D2491C5DD00F5C91D /* TSGetParameterListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSGetParameterListModel.h; sourceTree = "<group>"; };
+		DC0EB10E2491C5DD00F5C91D /* TSGetParameterListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSGetParameterListModel.m; sourceTree = "<group>"; };
+		DC0EB1142491CCE100F5C91D /* TSConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSConstant.h; sourceTree = "<group>"; };
+		DC0EB1152491CCF800F5C91D /* TSProjectConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSProjectConfig.h; sourceTree = "<group>"; };
+		DC0EB1162491CD0D00F5C91D /* TSAppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppConfig.h; sourceTree = "<group>"; };
+		DC0EB1172491CE6F00F5C91D /* TVStation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVStation-Prefix.pch"; sourceTree = "<group>"; };
+		DC0EB11D24921F1E00F5C91D /* TSEncryptUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSEncryptUtil.h; sourceTree = "<group>"; };
+		DC0EB11E24921F1E00F5C91D /* TSEncryptUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSEncryptUtil.m; sourceTree = "<group>"; };
+		DC0EB12024921F3C00F5C91D /* TSFileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSFileUtil.h; sourceTree = "<group>"; };
+		DC0EB12124921F3C00F5C91D /* TSFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSFileUtil.m; sourceTree = "<group>"; };
+		DC0EB12324921FEA00F5C91D /* TSDeviceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSDeviceUtil.h; sourceTree = "<group>"; };
+		DC0EB12424921FEA00F5C91D /* TSDeviceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSDeviceUtil.m; sourceTree = "<group>"; };
+		DC0EB1262492293300F5C91D /* TSGetStartAdsListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSGetStartAdsListRequest.h; sourceTree = "<group>"; };
+		DC0EB1272492293300F5C91D /* TSGetStartAdsListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSGetStartAdsListRequest.m; sourceTree = "<group>"; };
+		DC0EB12924922AA500F5C91D /* TSGetStartAdsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSGetStartAdsListModel.h; sourceTree = "<group>"; };
+		DC0EB12A24922AA500F5C91D /* TSGetStartAdsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSGetStartAdsListModel.m; sourceTree = "<group>"; };
 		DC0EBA66248F630E00CA22F9 /* TSNetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSNetworkUtil.h; sourceTree = "<group>"; };
 		DC0EBA67248F630E00CA22F9 /* TSNetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSNetworkUtil.m; sourceTree = "<group>"; };
 		DC0EBA692490830400CA22F9 /* TSBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSBaseModel.h; sourceTree = "<group>"; };
 		DC0EBA6A2490830400CA22F9 /* TSBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSBaseModel.m; sourceTree = "<group>"; };
-		DC0EBA6D24908D5A00CA22F9 /* DeviceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
-		DC0EBA6E24908D5A00CA22F9 /* DeviceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
 		DC0EBA722490BE8D00CA22F9 /* NSString+TSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TSExtension.h"; sourceTree = "<group>"; };
 		DC0EBA732490BE8D00CA22F9 /* NSString+TSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TSExtension.m"; sourceTree = "<group>"; };
 		DC0EBA762490C80D00CA22F9 /* TSGetParameterListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSGetParameterListRequest.h; sourceTree = "<group>"; };
@@ -93,11 +112,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC0EB10C2491C5A600F5C91D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EB10D2491C5DD00F5C91D /* TSGetParameterListModel.h */,
+				DC0EB10E2491C5DD00F5C91D /* TSGetParameterListModel.m */,
+				DC0EB12924922AA500F5C91D /* TSGetStartAdsListModel.h */,
+				DC0EB12A24922AA500F5C91D /* TSGetStartAdsListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC0EB1102491CC7900F5C91D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EB1112491CC7900F5C91D /* AppConfig */,
+				DC0EB1122491CC7900F5C91D /* Constant */,
+				DC0EB1132491CC7900F5C91D /* ProjectConfig */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		DC0EB1112491CC7900F5C91D /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EB1162491CD0D00F5C91D /* TSAppConfig.h */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		DC0EB1122491CC7900F5C91D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EB1142491CCE100F5C91D /* TSConstant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		DC0EB1132491CC7900F5C91D /* ProjectConfig */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EB1152491CCF800F5C91D /* TSProjectConfig.h */,
+			);
+			path = ProjectConfig;
+			sourceTree = "<group>";
+		};
+		DC0EB11824921AF900F5C91D /* FileUtil */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EB12024921F3C00F5C91D /* TSFileUtil.h */,
+				DC0EB12124921F3C00F5C91D /* TSFileUtil.m */,
+			);
+			path = FileUtil;
+			sourceTree = "<group>";
+		};
+		DC0EB11C24921EF900F5C91D /* EncryptUtil */ = {
+			isa = PBXGroup;
+			children = (
+				DC0EB11D24921F1E00F5C91D /* TSEncryptUtil.h */,
+				DC0EB11E24921F1E00F5C91D /* TSEncryptUtil.m */,
+			);
+			path = EncryptUtil;
+			sourceTree = "<group>";
+		};
 		DC0EBA6C24908D3600CA22F9 /* DeviceUtil */ = {
 			isa = PBXGroup;
 			children = (
-				DC0EBA6D24908D5A00CA22F9 /* DeviceUtil.h */,
-				DC0EBA6E24908D5A00CA22F9 /* DeviceUtil.m */,
+				DC0EB12324921FEA00F5C91D /* TSDeviceUtil.h */,
+				DC0EB12424921FEA00F5C91D /* TSDeviceUtil.m */,
 			);
 			path = DeviceUtil;
 			sourceTree = "<group>";
@@ -116,6 +198,8 @@
 			children = (
 				DC0EBA762490C80D00CA22F9 /* TSGetParameterListRequest.h */,
 				DC0EBA772490C80D00CA22F9 /* TSGetParameterListRequest.m */,
+				DC0EB1262492293300F5C91D /* TSGetStartAdsListRequest.h */,
+				DC0EB1272492293300F5C91D /* TSGetStartAdsListRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -155,6 +239,7 @@
 				DC6592512488F9B400D19765 /* LaunchScreen.storyboard */,
 				DC6592542488F9B400D19765 /* Info.plist */,
 				DC6592552488F9B400D19765 /* main.m */,
+				DC0EB1172491CE6F00F5C91D /* TVStation-Prefix.pch */,
 			);
 			path = TVStationProject;
 			sourceTree = "<group>";
@@ -163,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6592922489D5DD00D19765 /* AppDelegate */,
+				DC0EB1102491CC7900F5C91D /* Constant */,
 				DC751582248E264F004FE068 /* ThirdPart */,
 				DC6592982489D5DD00D19765 /* Base */,
 				DC6592972489D5DD00D19765 /* Categories */,
@@ -175,6 +261,8 @@
 		DC65928C2489D5DD00D19765 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DC0EB11C24921EF900F5C91D /* EncryptUtil */,
+				DC0EB11824921AF900F5C91D /* FileUtil */,
 				DC0EBA6C24908D3600CA22F9 /* DeviceUtil */,
 			);
 			path = Utils;
@@ -203,6 +291,7 @@
 			children = (
 				DC0EBA792490D04200CA22F9 /* TSLaunchManager.h */,
 				DC0EBA7A2490D04200CA22F9 /* TSLaunchManager.m */,
+				DC0EB10C2491C5A600F5C91D /* Model */,
 				DC0EBA752490C7C600CA22F9 /* Request */,
 			);
 			path = Manager;
@@ -400,20 +489,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0EB12524921FEA00F5C91D /* TSDeviceUtil.m in Sources */,
 				DC0EBA742490BE8D00CA22F9 /* NSString+TSExtension.m in Sources */,
+				DC0EB12B24922AA500F5C91D /* TSGetStartAdsListModel.m in Sources */,
 				DC0EBA7B2490D04200CA22F9 /* TSLaunchManager.m in Sources */,
+				DC0EB1282492293300F5C91D /* TSGetStartAdsListRequest.m in Sources */,
 				DC6592562488F9B400D19765 /* main.m in Sources */,
+				DC0EB11F24921F1E00F5C91D /* TSEncryptUtil.m in Sources */,
 				DC6592A62489DA4600D19765 /* TSLaunchViewController.m in Sources */,
-				DC0EBA6F24908D5A00CA22F9 /* DeviceUtil.m in Sources */,
 				DC6592A12489D5DD00D19765 /* BaseViewController.m in Sources */,
 				DC6592A02489D5DD00D19765 /* AppDelegate.m in Sources */,
 				DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */,
+				DC0EB12224921F3C00F5C91D /* TSFileUtil.m in Sources */,
 				DC75158A248E2D32004FE068 /* TSBaseRequest.m in Sources */,
 				DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */,
 				DC0EBA68248F630E00CA22F9 /* TSNetworkUtil.m in Sources */,
 				DC0EBA782490C80D00CA22F9 /* TSGetParameterListRequest.m in Sources */,
 				DC751587248E2CD1004FE068 /* TSNetworkManager.m in Sources */,
 				DC0EBA6B2490830400CA22F9 /* TSBaseModel.m in Sources */,
+				DC0EB10F2491C5DD00F5C91D /* TSGetParameterListModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C83B662A5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TVStationProject/TVStation-Prefix.pch";
 				INFOPLIST_FILE = TVStationProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -567,6 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6C83B662A5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TVStationProject/TVStation-Prefix.pch";
 				INFOPLIST_FILE = TVStationProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

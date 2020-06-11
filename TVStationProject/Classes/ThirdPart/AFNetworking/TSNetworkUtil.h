@@ -24,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 // dict转json
 + (NSString *)jsonStringWithDictionary:(NSDictionary *)dict;
+
+// 当前应用版本号
++ (NSString *)appVersionString;
+
+// 给指定文件目录添加不备份属性
++ (void)addDoNotBackupAttribute:(NSString *)path;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -21,4 +21,9 @@
              @"params":[params yy_modelToJSONString]};
 }
 
+- (TSGetParameterListModel *)responseModel
+{
+    TSGetParameterListModel *response = [TSGetParameterListModel yy_modelWithDictionary:self.responseObject];
+    return response;
+}
 @end

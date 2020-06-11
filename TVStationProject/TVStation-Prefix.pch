@@ -1,0 +1,16 @@
+//
+//  TVStation-Prefix.pch
+//  TVStationProject
+//
+//  Created by 徐世船 on 2020/6/11.
+//  Copyright © 2020 徐世船. All rights reserved.
+//
+
+#ifndef TVStation_Prefix_pch
+#define TVStation_Prefix_pch
+
+#import "TSProjectConfig.h"
+//#import "NSObject+YYModel.h"
+#import <YYModel/NSObject+YYModel.h>
+
+#endif /* TVStation_Prefix_pch */
