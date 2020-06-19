@@ -10,7 +10,9 @@
 #define TVStation_Prefix_pch
 
 #import "TSProjectConfig.h"
-//#import "NSObject+YYModel.h"
+#import "TSConstant.h"
+#import "TSAppConfig.h"
+
 #import <YYModel/NSObject+YYModel.h>
 
 #endif /* TVStation_Prefix_pch */

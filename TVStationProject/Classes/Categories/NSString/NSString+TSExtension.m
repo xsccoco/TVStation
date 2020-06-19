@@ -34,4 +34,24 @@
     return str;
 }
 
+// 过滤特殊字符
++ (NSString *)filterSpecialOnlyString:(NSString *)originStr
+{
+    if ([originStr isKindOfClass:[NSString class]]) {
+        NSString *regex = @"^[A-Za-z\\d\\u4E00-\\u9FA5]+$";
+        NSMutableString *resultStr = [NSMutableString string];
+        NSInteger length = originStr.length;
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+        int index = 0;
+        for (; index < length; index++) {
+            NSString *str = [originStr substringWithRange:NSMakeRange(index, 1)];
+            if ([predicate evaluateWithObject:str]) {
+                [resultStr appendString:str];
+            }
+        }
+        return resultStr;
+    } else {
+        return originStr;
+    }
+}
 @end

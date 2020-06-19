@@ -19,6 +19,8 @@
 		DC0EBA742490BE8D00CA22F9 /* NSString+TSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA732490BE8D00CA22F9 /* NSString+TSExtension.m */; };
 		DC0EBA782490C80D00CA22F9 /* TSGetParameterListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA772490C80D00CA22F9 /* TSGetParameterListRequest.m */; };
 		DC0EBA7B2490D04200CA22F9 /* TSLaunchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EBA7A2490D04200CA22F9 /* TSLaunchManager.m */; };
+		DC1CF9BD249C4F2E00DDAF26 /* TSKeyConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CF9BC249C4F2E00DDAF26 /* TSKeyConstant.m */; };
+		DC1CF9C1249C9C1100DDAF26 /* TSStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CF9C0249C9C1100DDAF26 /* TSStringUtil.m */; };
 		DC5A5B46248DED3800FD6997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5A5B45248DED3800FD6997 /* Assets.xcassets */; };
 		DC6592532488F9B400D19765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6592512488F9B400D19765 /* LaunchScreen.storyboard */; };
 		DC6592562488F9B400D19765 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6592552488F9B400D19765 /* main.m */; };
@@ -59,6 +61,10 @@
 		DC0EBA772490C80D00CA22F9 /* TSGetParameterListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSGetParameterListRequest.m; sourceTree = "<group>"; };
 		DC0EBA792490D04200CA22F9 /* TSLaunchManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLaunchManager.h; sourceTree = "<group>"; };
 		DC0EBA7A2490D04200CA22F9 /* TSLaunchManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLaunchManager.m; sourceTree = "<group>"; };
+		DC1CF9BB249C4F2E00DDAF26 /* TSKeyConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSKeyConstant.h; sourceTree = "<group>"; };
+		DC1CF9BC249C4F2E00DDAF26 /* TSKeyConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSKeyConstant.m; sourceTree = "<group>"; };
+		DC1CF9BF249C9C1100DDAF26 /* TSStringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSStringUtil.h; sourceTree = "<group>"; };
+		DC1CF9C0249C9C1100DDAF26 /* TSStringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSStringUtil.m; sourceTree = "<group>"; };
 		DC4B7022BE4D60EB8379C0A3 /* Pods-TVStationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVStationProject.release.xcconfig"; path = "Target Support Files/Pods-TVStationProject/Pods-TVStationProject.release.xcconfig"; sourceTree = "<group>"; };
 		DC5A5B45248DED3800FD6997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6592402488F9B300D19765 /* TVStationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVStationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				DC0EB1142491CCE100F5C91D /* TSConstant.h */,
+				DC1CF9BB249C4F2E00DDAF26 /* TSKeyConstant.h */,
+				DC1CF9BC249C4F2E00DDAF26 /* TSKeyConstant.m */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -204,6 +212,15 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		DC1CF9BE249C9BF200DDAF26 /* StringUtil */ = {
+			isa = PBXGroup;
+			children = (
+				DC1CF9BF249C9C1100DDAF26 /* TSStringUtil.h */,
+				DC1CF9C0249C9C1100DDAF26 /* TSStringUtil.m */,
+			);
+			path = StringUtil;
+			sourceTree = "<group>";
+		};
 		DC5A5B44248DED3800FD6997 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +278,7 @@
 		DC65928C2489D5DD00D19765 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DC1CF9BE249C9BF200DDAF26 /* StringUtil */,
 				DC0EB11C24921EF900F5C91D /* EncryptUtil */,
 				DC0EB11824921AF900F5C91D /* FileUtil */,
 				DC0EBA6C24908D3600CA22F9 /* DeviceUtil */,
@@ -279,14 +297,14 @@
 		DC65928E2489D5DD00D19765 /* TSLaunchViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DC65928F2489D5DD00D19765 /* Manager */,
+				DC65928F2489D5DD00D19765 /* LaunchManager */,
 				DC6592902489D5DD00D19765 /* View */,
 				DC6592912489D5DD00D19765 /* ViewController */,
 			);
 			path = TSLaunchViewController;
 			sourceTree = "<group>";
 		};
-		DC65928F2489D5DD00D19765 /* Manager */ = {
+		DC65928F2489D5DD00D19765 /* LaunchManager */ = {
 			isa = PBXGroup;
 			children = (
 				DC0EBA792490D04200CA22F9 /* TSLaunchManager.h */,
@@ -294,7 +312,7 @@
 				DC0EB10C2491C5A600F5C91D /* Model */,
 				DC0EBA752490C7C600CA22F9 /* Request */,
 			);
-			path = Manager;
+			path = LaunchManager;
 			sourceTree = "<group>";
 		};
 		DC6592902489D5DD00D19765 /* View */ = {
@@ -497,11 +515,13 @@
 				DC6592562488F9B400D19765 /* main.m in Sources */,
 				DC0EB11F24921F1E00F5C91D /* TSEncryptUtil.m in Sources */,
 				DC6592A62489DA4600D19765 /* TSLaunchViewController.m in Sources */,
+				DC1CF9BD249C4F2E00DDAF26 /* TSKeyConstant.m in Sources */,
 				DC6592A12489D5DD00D19765 /* BaseViewController.m in Sources */,
 				DC6592A02489D5DD00D19765 /* AppDelegate.m in Sources */,
 				DC6592A32489D5DD00D19765 /* BaseTabbarController.m in Sources */,
 				DC0EB12224921F3C00F5C91D /* TSFileUtil.m in Sources */,
 				DC75158A248E2D32004FE068 /* TSBaseRequest.m in Sources */,
+				DC1CF9C1249C9C1100DDAF26 /* TSStringUtil.m in Sources */,
 				DC6592A22489D5DD00D19765 /* BaseNavigationController.m in Sources */,
 				DC0EBA68248F630E00CA22F9 /* TSNetworkUtil.m in Sources */,
 				DC0EBA782490C80D00CA22F9 /* TSGetParameterListRequest.m in Sources */,

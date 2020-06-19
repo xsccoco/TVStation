@@ -91,4 +91,9 @@ typedef NS_ENUM(NSInteger, TSResponseStatus) { // 根据后台业务确定
 // http接口地址
 #define YANGFAN_SERVICE_URL     [NSString stringWithFormat:@"%@/setsail/external/externalService",BASE_SERVICE_URL]
 
+//Https Key
+#define KEY_APP_ID        @"appid_yangfanapp"
+#define KEY_APP_SECRET    @"B8A7E63EDB50D6C16485DE128327B775"
+
+
 #endif /* TSNetworkConstant_h */

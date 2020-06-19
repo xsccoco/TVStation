@@ -12,4 +12,5 @@
 
 #define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 
+#define UserDefaults            [NSUserDefaults standardUserDefaults]
 

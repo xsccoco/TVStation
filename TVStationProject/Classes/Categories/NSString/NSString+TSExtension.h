@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 将str转换成非nil的字符串
 + (NSString *)safeEmptyString:(NSString *)str;
+
+// 过滤特殊字符
++ (NSString *)filterSpecialOnlyString:(NSString *)originStr;
 @end
 
 NS_ASSUME_NONNULL_END

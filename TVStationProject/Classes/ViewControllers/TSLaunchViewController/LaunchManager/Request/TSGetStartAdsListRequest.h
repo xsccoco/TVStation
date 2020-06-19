@@ -4,7 +4,7 @@
 //
 //  Created by 徐世船 on 2020/6/11.
 //  Copyright © 2020 徐世船. All rights reserved.
-//
+//  获取启动广告接口
 
 #import "TSBaseRequest.h"
 #import "TSGetStartAdsListModel.h"

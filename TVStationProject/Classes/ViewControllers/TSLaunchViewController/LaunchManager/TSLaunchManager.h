@@ -21,10 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 // 获取系统参数
-- (void)getParameterList;
+- (void)loadParameterListRequestSuccessBlock:(void(^)(TSGetParameterListModel *paramListModel))success
+                                failureBlock:(void(^)(TSBaseRequest *request))failure;
 
 // 获取开机广告
-- (void)getStartAdList;
+- (void)loadStartAdListRequestSuccessBlock:(void(^)(TSGetStartAdsListModel *adsListModel))success
+                              failureBlock:(void(^)(TSBaseRequest *request))failure;
 @end
 
 NS_ASSUME_NONNULL_END

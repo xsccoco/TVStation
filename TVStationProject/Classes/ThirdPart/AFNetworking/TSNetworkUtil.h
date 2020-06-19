@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TSNetworkConstant.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,17 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSDictionary*)commonParamsAppVersion;
 
 
-// json转dict
-+ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
-
-// dict转json
-+ (NSString *)jsonStringWithDictionary:(NSDictionary *)dict;
+// 对请求的URL进行加密处理
++ (NSString *)getSecurityKey:(NSURL *)requestURL withParameters:(id)parameters requestMethod:(TSRequestMethod)requestMethod;
 
 // 当前应用版本号
 + (NSString *)appVersionString;
-
-// 给指定文件目录添加不备份属性
-+ (void)addDoNotBackupAttribute:(NSString *)path;
 @end
 
 NS_ASSUME_NONNULL_END

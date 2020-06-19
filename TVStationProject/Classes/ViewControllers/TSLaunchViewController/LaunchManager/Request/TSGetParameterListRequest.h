@@ -4,7 +4,7 @@
 //
 //  Created by 徐世船 on 2020/6/10.
 //  Copyright © 2020 徐世船. All rights reserved.
-//
+//  根据参数名来获取系统参数列表和获取PAAS配置信息
 
 #import "TSBaseRequest.h"
 #import "TSGetParameterListModel.h"

@@ -11,6 +11,11 @@
 #import "TSBaseRequest.h"
 #import "TSNetworkUtil.h"
 #import "AFNetworkActivityIndicatorManager.h"
+#import "TSEncryptUtil.h"
+#import "NSString+TSExtension.h"
+#import "TSStringUtil.h"
+
+
 
 @interface TSNetworkManager ()
 
@@ -94,11 +99,7 @@ NSString * const TSRequestOutOfNetwork = @"com.xsc.network.request.outofNetwork"
     if (request.useCookies) {
         [self loadCookies];
     }
-    // 处理请求url
-    NSString *url = [self configRequestURL:request];
-    if (!request.isAlreadEncode) {
-        url = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    }
+
     // 处理参数
     id params = [self configRequestParams:request];
     if (request.requestSerializerType == TSRequestSerializerTypeJSON) {
@@ -131,8 +132,18 @@ NSString * const TSRequestOutOfNetwork = @"com.xsc.network.request.outofNetwork"
         default:
             break;
     }
-    self.sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"text/xml", @"text/plain", @"text/json", @"text/javascript", @"image/png", @"image/jpeg", @"application/json", @"application/pdf", nil];
+    // 处理请求url
+    NSString *url = [self configRequestURL:request];
+    if (!request.isAlreadEncode) {
+        url = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    }
+   
     TSRequestMethod requestMethod = request.requestMethod;
+    
+    NSURL *urel = [NSURL URLWithString:url];
+    urel = [NSURL URLWithString:[url stringByAppendingFormat:urel.query ? @"&%@" : @"?%@", [TSNetworkUtil getSecurityKey:urel withParameters:params requestMethod:requestMethod]]];
+    url = urel.absoluteString;
+    self.sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"text/xml", @"text/plain", @"text/json", @"text/javascript", @"image/png", @"image/jpeg", @"application/json", @"application/pdf", nil];
     NSURLSessionDataTask *task = nil;
     __weak typeof(self) weakSelf = self;
     switch (requestMethod) {
@@ -281,9 +292,9 @@ NSString * const TSRequestOutOfNetwork = @"com.xsc.network.request.outofNetwork"
         } else {
             //非透传接口
             NSString *jsonString = [params valueForKey:REQUEST_PARAM_KEY];
-            NSMutableDictionary *dicWithJson = [[NSMutableDictionary alloc]initWithDictionary:[TSNetworkUtil dictionaryWithJsonString:jsonString]];
+            NSMutableDictionary *dicWithJson = [[NSMutableDictionary alloc]initWithDictionary:[TSStringUtil dictionaryWithJsonString:jsonString]];
             [dicWithJson addEntriesFromDictionary:[TSNetworkUtil commonParamsImeiTerminalType]];
-            NSString *paramsString = [TSNetworkUtil jsonStringWithDictionary:dicWithJson];
+            NSString *paramsString = [TSStringUtil jsonStringWithDictionary:dicWithJson];
             [params setObject:paramsString forKey:REQUEST_PARAM_KEY];
             [params addEntriesFromDictionary:[TSNetworkUtil commonParamsApiVersionModFlag]];
         }
@@ -348,4 +359,7 @@ NSString * const TSRequestOutOfNetwork = @"com.xsc.network.request.outofNetwork"
         [request requestCompleteSuccess];
     }
 }
+
+
+
 @end
